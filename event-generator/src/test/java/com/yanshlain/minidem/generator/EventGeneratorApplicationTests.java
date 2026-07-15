@@ -1,10 +1,10 @@
-package com.yanshlain.minidem;
+package com.yanshlain.minidem.generator;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MinidemApplicationTests {
+class EventGeneratorApplicationTests {
 
     @Test
     void contextLoads() {

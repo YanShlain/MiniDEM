@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: minidem-postgres
+    environment:
+      POSTGRES_DB: minidem
+      POSTGRES_USER: minidem
+      POSTGRES_PASSWORD: minidem
+    ports:
+      - "5432:5432"
+    volumes:
+      - minidem-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  minidem-postgres-data:
