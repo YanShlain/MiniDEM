@@ -20,7 +20,7 @@ query endpoint. No GraphQL, no Redis, no gRPC, no Kafka this session.
       `ingest-service`: `Site`/`Event` JPA entities, repositories, `DataSeeder` (seeds ~6 sites).
       Verify: tables created on boot, sites seeded.
 
-- [ ] **Phase 2 — Ingestion endpoint**
+- [x] **Phase 2 — Ingestion endpoint**
       `ingest-service`: `EventIngestService` (`@Transactional`) + `POST /events`.
       Verify: manual `curl -X POST localhost:8080/events` inserts a row.
 
