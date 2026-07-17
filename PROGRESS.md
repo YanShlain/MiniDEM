@@ -24,7 +24,7 @@ query endpoint. No GraphQL, no Redis, no gRPC, no Kafka this session.
       `ingest-service`: `EventIngestService` (`@Transactional`) + `POST /events`.
       Verify: manual `curl -X POST localhost:8080/events` inserts a row.
 
-- [ ] **Phase 3 — Generator service**
+- [x] **Phase 3 — Generator service**
       `event-generator`: `@Scheduled` loop building a random `IngestEventRequest`, POSTing
       via `RestClient` to the collector.
       Verify: both apps running, event count grows every ~5s.
