@@ -29,7 +29,7 @@ query endpoint. No GraphQL, no Redis, no gRPC, no Kafka this session.
       via `RestClient` to the collector.
       Verify: both apps running, event count grows every ~5s.
 
-- [ ] **Phase 4 — Query endpoint**
+- [x] **Phase 4 — Query endpoint**
       `ingest-service`: `GET /events` with optional `?site=` / `?type=` filters, newest-first.
       Verify: `curl localhost:8080/events` (and filtered variants) return expected JSON.
 
